@@ -25,6 +25,15 @@ function animateNumber(child, numberp) {
 }
 
 /* 
+------------------------------------------
+---------------Cash the DOM---------------
+------------------------------------------
+*/
+const contact_btn = document.querySelector('#contact-btn');
+const contact_form_wrapper = document.querySelector('#contact-form-wrapper');
+const contact_form_btn_close = document.querySelector('#close-contact-form');
+
+/* 
 
 */
 $(document).ready(function(){
@@ -57,19 +66,17 @@ $(document).ready(function(){
     animateNumber(8, 1.0);
 
     /* 
-    ------------------------------------------
-    ---------------Cash the DOM---------------
-    ------------------------------------------
-    */
-    const contact_form = document.querySelector('#contact-form');
-
-    /* 
     -------------------------------------------------
     ---------------Auxiliary Functions---------------
     -------------------------------------------------
     */
     function showContactForm() {
-        alert("presionado");
+        contact_btn.style.display = "none";
+        contact_form_wrapper.style.display = "flex";
+    }
+    function closeContactForm() {
+        contact_btn.style.display = "flex";
+        contact_form_wrapper.style.display = "none";
     }
 
     /* 
@@ -77,7 +84,8 @@ $(document).ready(function(){
     ---------------Event listeners---------------
     ---------------------------------------------
     */
-   document.querySelector('#contact-btn').addEventListener('click', showContactForm);
+   contact_btn.addEventListener('click', showContactForm);
+   contact_form_btn_close.addEventListener('click', closeContactForm);
 
 });
 

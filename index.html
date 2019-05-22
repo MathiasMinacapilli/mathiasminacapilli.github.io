@@ -44,21 +44,21 @@
 
     <!-- Main content -->
     <main>
-
         <!-- Presentation -->
         <section class="presentation" id="presentation">
             <div class="container clearfix">
                 <h3>Presentación</h3>
-                <img src="public/img/face.jpg" alt="face">
-                <p>
-                    Mi nombre es Mathias Minacapilli, tengo 19 años y soy de Uruguay.
-                    Actualmente me encuentro cursando el tercer año de la carrera Ingeniería en
-                    Computación (UdelaR). Curse la escuela en la Escuela Nº224 de El Pinar, ciclo
-                    básico en el Licep IEP y bachillerato en el Liceo Pinar Nº1.
-                    <br>
-                    Además aprobé el exámen FCE (First Certificate in English) en el instituto
-                    Anglo.
-                </p>
+                <div id="main-img-wrapper">
+                    <img src="public/img/face.jpg" alt="face">
+                </div>
+                <div id="about-me-wrapper">
+                    <ul>
+                        <li>Nombre: Mathias Minacapilli</li>
+                        <li>Nacimiento: 25/03/1999</li>
+                        <li>Estudio: Cursando el tercer año de la carrera Ingenieria en Computación (UdelaR)</li>
+                        <li>Otros estudios: Exámen FCE (First Certificate in English)</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -171,15 +171,19 @@
     </main>
 
     <!-- Contact Button -->
-    <button id="contact-btn" class="contact"><i class="fas fa-envelope"></i> Contacto</button>
-    <div class="contact-form-wrapper">
-        <h4>Contacto</h4> <span id="close-contact-form"><i class="fas fa-times"></i></span>
+    <!-- <button id="contact-btn" class="contact"><i class="fas fa-envelope"></i> Contacto</button>
+    <div id="contact-form-wrapper" class="contact-form-wrapper">
+        <div class="contact-form-header clearfix">
+            <h4>Contacto</h4> 
+            <span id="close-contact-form"><i class="fas fa-times"></i></span>
+        </div>
+        <hr>
         <form id="contact-form" action="">
-            <input type="email" name="email" id="contact-email" placeholder="Email">
+            <input type="email" name="email" id="contact-email" class="form-" placeholder="Email">
             <textarea name="contact-msg" id="contact-msg" cols="30" rows="10" placeholder="Mensaje"></textarea>
             <input type="submit" value="Enviar">
         </form>
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <footer class="footer">
