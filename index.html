@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mathias Minacapilli</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!-- Angular JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular-loader.min.js">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="public/css/styles.css">
+
 </head>
+
 <body>
-    <h1>Bienvenidos! :D</h1>
+    <!-- Header -->
+    <nav class="navigation bg-dark">
+        <div class="container clearfix">
+            <h2 class="nav-name"><a href="/">Mathias Minacapilli</a></h2>
+        </div>
+    </nav>
+
+    <!-- Aside -->
+    <aside class="aside" id="aside">
+        <!-- <i class="fas fa-angle-double-left"></i> -->
+        <span><i class="fas fa-angle-double-right"></i></span>
+        <div class="container" id="navigation-list">
+            <ul>
+                <li><a href="/#presentation">Presentación</a></li>
+                <li><a href="/#sobre-mi">Sobre mí</a></li>
+                <li><a href="/#knowledge-experience">Conocimiento y Experiencia</a></li>
+                <li><a href="/#proyectos-de-software">Proyectos</a></li>
+                <li><a href="/#social">Social</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Presentation -->
+        <section class="presentation" id="presentation">
+            <div class="container clearfix">
+                <h3>Presentación</h3>
+                <img src="public/img/face.jpg" alt="face">
+                <p>
+                    Mi nombre es Mathias Minacapilli, tengo 19 años y soy de Uruguay.
+                    Actualmente me encuentro cursando el tercer año de la carrera Ingeniería en
+                    Computación (UdelaR). Curse la escuela en la Escuela Nº224 de El Pinar, ciclo
+                    básico en el Licep IEP y bachillerato en el Liceo Pinar Nº1.
+                    <br>
+                    Además aprobé el exámen FCE (First Certificate in English) en el instituto
+                    Anglo.
+                </p>
+            </div>
+        </section>
+
+        <!-- Knowledge/Expirience -->
+        <section class="knowledge-experience bg-dark" id="knowledge-experience">
+            <div class="container">
+                <h3>Conocimientos y Experiencia</h3>
+                <ul class="clearfix" id="knowledge">
+                    <li><p class="numero">9.0</p>C/C++</li>
+                    <li><p class="numero">8.4</p>HTML/CSS/JS</li>
+                    <li><p class="numero">5.0</p>AJAX-Angular</li>
+                    <li><p class="numero">7.5</p>SQL</li>
+                    <li><p class="numero">6.0</p>Python</li>
+                    <li><p class="numero">4.6</p>Nodejs</li>
+                    <li><p class="numero">8.0</p>PHP</li>
+                    <li><p class="numero">1.0</p>Java</li>
+                </ul>
+                <p class="actual-job">
+                    Actualmente me encuentro trabajando en el puesto de Asistente de Sistemas
+                    en la empresa Movie.
+                </p>
+            </div> 
+        </section>
+
+        <!-- About -->
+        <section class="sobre-mi" id="sobre-mi">
+            <div class="container">
+                <h3>Sobre mi</h3>
+                <div class="sobre-mi-imgs">
+                    <ul>
+                        <li><img src="public/img/handball.jpg" alt="hb"></li>
+                        <li><img src="public/img/music.jpg" alt="music"></li>
+                        <li><img src="public/img/family.jpg" alt="family"></li>
+                    </ul>
+                </div>
+                <div class="sobre-mi-contenido">
+                    <p>
+                        Mi nombre es Mathias Minacapilli, tengo 19 años
+                        y soy de Uruguay.
+                        <br>
+                        Me considero una persona bastante activa, es decir, no puedo parar de leer,
+                        aprender, y buscar cosas que me interesan y sobre las cuales quiero conocer.
+                        <br>
+                        Desde chico me gustaron mucho las ciencias (todas las ramas),
+                        la música, la magia y obviamente las computadoras.
+                        <br>
+                        Siempre tuve interés por aprender y saber como funcionan las computadoras,
+                        las cosas eléctricas/electronicas, y todo lo relacionado.
+                        Por eso es que en bachillerato seguí la orientación
+                        Científico/Ingeniería y actualmente me encuentro cursando
+                        el tercer año de la carrera Ingeniería en Computación
+                        en la UdelaR (Universidad de la República).
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Projects -->
+        <section class="proyectos-de-software bg-dark" id="proyectos-de-software">
+            <div class="container">
+                <h3>Proyectos de software</h3>
+                <div class="projects">
+                    <div class="project secondary-bg-dark">
+                        <h4><a href="#">Orders Admin</a></h4>
+                        <p>
+                            Aplicación para controlar las
+                            ordenes (pedidos) de una empresa.
+                        </p>
+                        <a href="#"><i class="fab fa-github" id="github"></i> Ver en Github</a>
+                        <a href="#">Ampliar</a>
+                    </div>
+                    <div class="project secondary-bg-dark">
+                        <h4><a href="#">My personal enviroment</a></h4>
+                        <p>
+                            Página para estudiantes en la cual
+                            pueden desde asignar pruebas en un
+                            calendario hasta consultar por las
+                            previaturas de su carrera.
+                        </p>
+                        <a href="#"><i class="fab fa-github" id="github"></i> Ver en Github</a>
+                        <a href="#">Ampliar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social -->
+        <section class="social" id="social">
+            <div class="container">
+                <h3>Social</h3>
+                <p>Puedes seguirme en las redes sociales!</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/mathias-minacapilli-5258ab177/" target="_blank">
+                        <i class="fab fa-linkedin" id="linkedin"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com/xMathM" target="_blank">
+                        <i class="fab fa-twitter" id="twitter"></i>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/mathiminacapilli/?hl=es-la" target="_blank">
+                        <i class="fab fa-instagram" id="instagram"></i>
+                    </a></li>
+                    <li><a href="https://github.com/MathiasMinacapilli" target="_blank">
+                        <i class="fab fa-github" id="github"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Contact Button -->
+    <button id="contact-btn" class="contact"><i class="fas fa-envelope"></i> Contacto</button>
+    <div class="contact-form-wrapper">
+        <h4>Contacto</h4> <span id="close-contact-form"><i class="fas fa-times"></i></span>
+        <form id="contact-form" action="">
+            <input type="email" name="email" id="contact-email" placeholder="Email">
+            <textarea name="contact-msg" id="contact-msg" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Desarrollado por Mathias Minacapilli &copy; 2019</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- animateNumber -->
+    <script src="public/js/jquery.animateNumber.min.js"></script>
+    <!-- Own JS -->
+    <script src="public/js/index.js"></script>
 </body>
+
 </html>
