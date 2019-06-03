@@ -38,20 +38,32 @@ const contact_form_btn_close = document.querySelector('#close-contact-form');
 */
 $(document).ready(function(){
 
-    /* Aside Control */
+    /* --Aside Control-- */
     let navigation_state = 0;
-    var aside = document.getElementById('aside'); //Icono de flecha
-    aside.addEventListener('click', function(e) {
+    var aside_btn = document.querySelector('#aside-btn'); //Icono de flecha
+    aside_btn.addEventListener('click', (e) => {
+        e.preventDefault();
         let list = document.getElementById('navigation-list');
         if(navigation_state == 0) {
             list.style.left = '0';
-            aside.style.left = '30vw';
             navigation_state = 1;
+            /* if(window.innerWidth <= 768) { //Control de la resolucion de la pagina
+                aside_btn.style.left = '45vw';
+                console.log(aside_btn);
+            }
+            else {
+                aside_btn.style.left = '30vw';
+            } */
         }
         else { //state = 1
-            list.style.left = '-30vw';
-            aside.style.left = '0';
+            /* aside_btn.style.left = '0'; */
             navigation_state = 0;
+            if(window.innerWidth <= 768) { //Control de la resolucion de la pagina
+                list.style.left = '-45vw';
+            }
+            else {
+                list.style.left = '-30vw';
+            }
         }
     });
   
@@ -84,8 +96,8 @@ $(document).ready(function(){
     ---------------Event listeners---------------
     ---------------------------------------------
     */
-   contact_btn.addEventListener('click', showContactForm);
-   contact_form_btn_close.addEventListener('click', closeContactForm);
+    contact_btn.addEventListener('click', showContactForm);
+    contact_form_btn_close.addEventListener('click', closeContactForm);
 
 });
 

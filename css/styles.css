@@ -103,6 +103,8 @@ section h3 {
 .aside span {
     color: var(--secondary-dark-color);
     font-size: 50px;
+    position: fixed;
+    right: 0;
 }
 .aside span:hover {
     cursor: pointer;
@@ -119,6 +121,21 @@ section h3 {
     opacity: .9;
     z-index: 100;
     transition: 1s;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .aside .container {
+        width: 45vw;
+        left: -45vw;
+    }    
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
 }
 .aside .container ul {
     display: flex;
@@ -236,13 +253,14 @@ section h3 {
 /* 
 =============== section.knowledge-experience =============== 
 */
-.knowledge-experience ul {
+#knowledge-experience ul#knowledge {
     list-style: none;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
-.knowledge-experience ul li {
+#knowledge-experience ul#knowledge li {
     width: 25%;
-    float: left;
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
@@ -251,13 +269,13 @@ section h3 {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    .knowledge-experience ul li {
+    #knowledge-experience ul#knowledge li {
         width: 32%;
     }
 }
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 548px) {
-    .knowledge-experience ul li {
+    #knowledge-experience ul#knowledge li {
         width: 50%;
     }
 }

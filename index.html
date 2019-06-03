@@ -15,7 +15,7 @@
     <!-- Angular JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular-loader.min.js">
     <!-- Own CSS -->
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -29,15 +29,14 @@
 
     <!-- Aside -->
     <aside class="aside" id="aside">
-        <!-- <i class="fas fa-angle-double-left"></i> -->
-        <span><i class="fas fa-angle-double-right"></i></span>
+        <span id="aside-btn"><i class="fas fa-angle-double-right"></i></span>
         <div class="container" id="navigation-list">
             <ul>
-                <li><a href="/#presentation">Presentación</a></li>
-                <li><a href="/#sobre-mi">Sobre mí</a></li>
-                <li><a href="/#knowledge-experience">Conocimiento y Experiencia</a></li>
-                <li><a href="/#proyectos-de-software">Proyectos</a></li>
-                <li><a href="/#social">Social</a></li>
+                <li><a href="#presentation">Presentación</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#knowledge-experience">Conocimiento y Experiencia</a></li>
+                <li><a href="#proyectos-de-software">Proyectos</a></li>
+                <li><a href="#social">Social</a></li>
             </ul>
         </div>
     </aside>
@@ -49,7 +48,7 @@
             <div class="container clearfix">
                 <h3>Presentación</h3>
                 <div id="main-img-wrapper">
-                    <img src="public/img/face.jpg" alt="face">
+                    <img src="img/face.jpg" alt="face">
                 </div>
                 <div id="about-me-wrapper">
                     <ul>
@@ -63,23 +62,31 @@
         </section>
 
         <!-- Knowledge/Expirience -->
-        <section class="knowledge-experience bg-dark" id="knowledge-experience">
+        <section class="bg-dark" id="knowledge-experience">
             <div class="container">
                 <h3>Conocimientos y Experiencia</h3>
-                <ul class="clearfix" id="knowledge">
-                    <li><p class="numero">9.0</p>C/C++</li>
-                    <li><p class="numero">8.4</p>HTML/CSS/JS</li>
-                    <li><p class="numero">5.0</p>AJAX-Angular</li>
-                    <li><p class="numero">7.5</p>SQL</li>
-                    <li><p class="numero">6.0</p>Python</li>
-                    <li><p class="numero">4.6</p>Nodejs</li>
-                    <li><p class="numero">8.0</p>PHP</li>
-                    <li><p class="numero">1.0</p>Java</li>
-                </ul>
-                <p class="actual-job">
-                    Actualmente me encuentro trabajando en el puesto de Asistente de Sistemas
-                    en la empresa Movie.
-                </p>
+                <div>
+                    <ul class="" id="knowledge">
+                        <li><p class="numero">9.0</p>C/C++</li>
+                        <li><p class="numero">8.4</p>HTML/CSS/JS</li>
+                        <li><p class="numero">5.0</p>AJAX-Angular</li>
+                        <li><p class="numero">7.5</p>SQL</li>
+                        <li><p class="numero">6.0</p>Python</li>
+                        <li><p class="numero">4.6</p>Nodejs</li>
+                        <li><p class="numero">8.0</p>PHP</li>
+                        <li><p class="numero">1.0</p>Java</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li> <p>
+                            <b>Pasantía Asistente de Sistemas</b> – Movie (Montevideo Shopping, Octubre 2018)
+                        </p></li>
+                        <li> <p>
+                            <b>Asistente de Sistemas</b> – Movie (Montevideo Shopping, Diciembre 2018)
+                        </p></li>
+                    </ul>
+                </div>
             </div> 
         </section>
 
@@ -89,9 +96,9 @@
                 <h3>Sobre mi</h3>
                 <div class="sobre-mi-imgs">
                     <ul>
-                        <li><img src="public/img/handball.jpg" alt="hb"></li>
-                        <li><img src="public/img/music.jpg" alt="music"></li>
-                        <li><img src="public/img/family.jpg" alt="family"></li>
+                        <li><img src="img/handball.jpg" alt="hb"></li>
+                        <li><img src="img/music.jpg" alt="music"></li>
+                        <li><img src="img/family.jpg" alt="family"></li>
                     </ul>
                 </div>
                 <div class="sobre-mi-contenido">
@@ -122,6 +129,14 @@
             <div class="container">
                 <h3>Proyectos de software</h3>
                 <div class="projects">
+                    <div class="project secondary-bg-dark">
+                        <h4><a href="#">Mathias Minacapilli</a></h4>
+                        <p>
+                            This page.
+                        </p>
+                        <a href="https://github.com/MathiasMinacapilli/mathiasminacapilli.github.io"><i class="fab fa-github" id="github"></i> Ver en Github</a>
+                        <a href="#">Ampliar</a>
+                    </div>
                     <div class="project secondary-bg-dark">
                         <h4><a href="#">Orders Admin</a></h4>
                         <p>
@@ -196,9 +211,9 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <!-- animateNumber -->
-    <script src="public/js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
     <!-- Own JS -->
-    <script src="public/js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
